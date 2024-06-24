@@ -37,6 +37,16 @@ const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
   {
+    resolve: 'medusa-file-r2',
+    options: {
+      account_id: process.env.R2_ACCOUNT_ID,
+      access_key: process.env.R2_ACCESS_KEY,
+      secret_key: process.env.R2_SECRET_KEY,
+      bucket: process.env.R2_BUCKET_NAME,
+      public_url: process.env.R2_PUBLIC_URL,
+    },
+  },
+  {
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: 'uploads',
