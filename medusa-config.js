@@ -45,12 +45,12 @@ const plugins = [
       secret_access_key: process.env.R2_SECRET_KEY,
     },
   },
-  {
-    resolve: `@medusajs/file-local`,
-    options: {
-      upload_dir: 'uploads',
-    },
-  },
+  // {
+  //   resolve: `@medusajs/file-local`,
+  //   options: {
+  //     upload_dir: 'uploads',
+  //   },
+  // },
   {
     resolve: '@medusajs/admin',
     /** @type {import('@medusajs/admin').PluginOptions} */
