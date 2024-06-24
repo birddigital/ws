@@ -43,6 +43,7 @@ const plugins = [
       bucket: process.env.R2_BUCKET_NAME,
       access_key_id: process.env.R2_ACCESS_KEY,
       secret_access_key: process.env.R2_SECRET_KEY,
+      region: 'us-east-1',
     },
   },
   // {
