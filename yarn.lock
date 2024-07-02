@@ -5806,6 +5806,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sendgrid/client@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/client@npm:7.7.0"
+  dependencies:
+    "@sendgrid/helpers": "npm:^7.7.0"
+    axios: "npm:^0.26.0"
+  checksum: 10c0/acf1db2dcc5181f6f9befba811ba6acb31e50051ab6bded952cb073f117c9237d86013602cdf523b91582c40545e1085a413f1e9e490a46b1d664a5c956c1f3f
+  languageName: node
+  linkType: hard
+
+"@sendgrid/helpers@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/helpers@npm:7.7.0"
+  dependencies:
+    deepmerge: "npm:^4.2.2"
+  checksum: 10c0/14dfe9af191dd9ad18f0b2744d6d12dbc80f830507b6112d8c4c1c4741ff282393a06e4b4559c0f404d33971639ecadb1017e0cc3b7187e56ec64ab9ee5ff21c
+  languageName: node
+  linkType: hard
+
+"@sendgrid/mail@npm:^7.1.1":
+  version: 7.7.0
+  resolution: "@sendgrid/mail@npm:7.7.0"
+  dependencies:
+    "@sendgrid/client": "npm:^7.7.0"
+    "@sendgrid/helpers": "npm:^7.7.0"
+  checksum: 10c0/5a1d617f1e3f8d47d4fe188ff08f18fca63e3006545ad1f954bf30887806c810f6c0dea7d8850c24de03b3aca75f70f4324369ed2497d957870b8a65f1451127
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.5":
   version: 4.1.5
   resolution: "@sideway/address@npm:4.1.5"
@@ -8767,6 +8796,15 @@ __metadata:
   dependencies:
     follow-redirects: "npm:^1.14.4"
   checksum: 10c0/d106561e761bf48633633073626eafb80289eb7c7c27f9fae4fb796939b6ecd2c9f63b596e3b3d872f7c0bec6b2fb117c58456d387e4ca2da7fc07c795a979c3
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.26.0":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
+  dependencies:
+    follow-redirects: "npm:^1.14.8"
+  checksum: 10c0/77ad7f1e6ca04fcd3fa8af1795b09d8b7c005b71a31f28d99ba40cda0bdcc12a4627801d7fac5efa62b9f667a8402bd54c669039694373bc8d44f6be611f785c
   languageName: node
   linkType: hard
 
@@ -11785,7 +11823,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.4":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.4, follow-redirects@npm:^1.14.8":
   version: 1.15.6
   resolution: "follow-redirects@npm:1.15.6"
   peerDependenciesMeta:
@@ -14715,6 +14753,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"medusa-plugin-sendgrid@npm:^1.3.12":
+  version: 1.3.12
+  resolution: "medusa-plugin-sendgrid@npm:1.3.12"
+  dependencies:
+    "@babel/plugin-transform-classes": "npm:^7.9.5"
+    "@sendgrid/mail": "npm:^7.1.1"
+    body-parser: "npm:^1.19.0"
+    express: "npm:^4.17.1"
+    medusa-core-utils: "npm:^1.2.0"
+  peerDependencies:
+    medusa-interfaces: ^1.3.7
+    typeorm: ^0.3.16
+  checksum: 10c0/afdc522af7fe21653097b579224e6d8fbb805fb7ea28e77a7766d87a556579794b56dace1c80cbddef8ca0cd60a5a479c884da3b390492302729759c7220feb0
+  languageName: node
+  linkType: hard
+
 "medusa-react@npm:^9.0.17":
   version: 9.0.17
   resolution: "medusa-react@npm:9.0.17"
@@ -14788,6 +14842,7 @@ __metadata:
     medusa-interfaces: "npm:latest"
     medusa-payment-manual: "npm:latest"
     medusa-payment-stripe: "npm:^6.0.9"
+    medusa-plugin-sendgrid: "npm:^1.3.12"
     prism-react-renderer: "npm:^2.0.4"
     react: "npm:^18.3.1"
     rimraf: "npm:^3.0.2"
